@@ -1,0 +1,242 @@
+@import '../mixins/mixins';
+@import '../variables/variable';
+
+/*=========================================================
+                Common Section 1 css Start
+=========================================================*/
+#common_section{
+    padding: 40px 0;
+
+    .com_head{
+        @include fs($c1,35px,800,$f2);
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .com_sec_pera{
+        margin: 20px 0;
+        @include fs(#000,17px,400,$f3);
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    ul,
+    ol{
+        padding-left: 100px;
+        padding-right: 100px;
+        li{
+            list-style: square;
+            margin: 20px 0;
+            font-style: italic;
+            @include fs(#000,17px,400,$f3);
+        }
+    }
+    ol{
+        li{
+            list-style:decimal;
+        }
+    }
+    .item_row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .item{
+            margin-bottom: 24px;
+            .item_img{
+                text-align: center;
+                margin-bottom: 15px;
+                img{
+                    width: 100%;
+                    max-width: 120px;
+                }
+            }
+            .item_title{
+                @include fs($f1,18px,500,$f3);
+                text-align: center;
+                text-transform: capitalize;
+            }
+        }
+    }
+    .service_row{
+        padding-top: 40px;
+        .service_item{
+            text-align: center;
+            img{
+                max-width: 80px;
+                border-radius: 50%;
+            }
+            h4{
+                @include fs(#000,16px,400,$f3);
+                text-transform: capitalize;
+                margin-top: 15px;
+            }
+        }
+    }
+    .review_container{
+        background: #F0F3FC;
+        border-radius: 20px;
+        padding: 20px 50px;
+        .review_left{
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            h5{
+                @include fs(#000,50px,700,$f3);
+            }
+            .stars{
+                i{
+                    font-size: 15px;
+                    color: #38AC60;
+                }
+            }
+        }
+        .review_right{
+            .review_scale{
+                width: 100%;
+                height: 10px;
+                background: #DEE4F2;
+                border-radius: 5px;
+                margin: 10px 0;
+                position: relative;
+                margin-left: 20px;
+                span{
+                    position: absolute;
+                    top: 50%;
+                    left: -15px;
+                    transform: translateY(-50%);
+                    @include fs(#000,14px,500,$f3);
+                }
+                &::after{
+                    position: absolute;
+                    content: '';
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%);
+                    height: 10px;
+                    background: #38AC60;
+                    border-radius: 5px;
+                }
+                &.five{
+                    &::after{
+                        width: 70%;
+                    }
+                }
+                &.four{
+                    &::after{
+                        width: 90%;
+                    }
+                }
+                &.three{
+                    &::after{
+                        width: 40%;
+                    }
+                }
+                &.two{
+                    &::after{
+                        width: 20%;
+                    }
+                }
+                &.one{
+                    &::after{
+                        width: 10%;
+                    }
+                }
+            }
+        }
+    }
+    .text_review,
+    .review_slider{
+        margin-top: 40px;
+        position: relative;
+        .prev_aro,
+        .nxt_aro{
+            position: absolute;
+            bottom: -50px;
+            width: 50px;
+            height: 50px;
+            background: #FFE800;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 50%;
+            transform: translateX(-50%);
+        }
+        .prev_aro{
+            left: 48%;
+            margin-right: 10px;
+        }
+        .nxt_aro{
+            left: 52%;
+            margin-left: 10px;
+        }
+        .text_review_item{
+            margin: 12px;
+            .head{
+                height: 100px;
+                background: $c2;
+                border-radius: 20px 20px 0 0;
+                position: relative;
+                img{
+                    height: 80px;
+                    width: 80px;
+                    max-width: 80px;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: 20px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                .name{
+                    position: absolute;
+                    top: 50%;
+                    left: 120px;
+                    transform: translateY(-50%);
+                    @include fs($c1,20px,500,$f1);
+                }
+            }
+            p{
+                @include fs(#000,15px,400,$f3);
+                line-height: 24px;
+                padding: 30px 20px 20px;
+                border: 8px solid $c2;
+                border-top: 0;
+                height: 300px;
+                border-radius: 0 0 20px 20px;
+            }
+        }
+    }
+
+    .member_row{
+        margin-top: 20px;
+        justify-content: space-evenly;
+        .item{
+            .item_img{
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    .question_inner{
+        ul{
+            li{
+                border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+                list-style: none;
+                p{
+                    a{
+                        background: transparent;
+                        border: none;
+                        @include fs(#000,16px,600,$f2);
+                    }
+                }
+                .card{
+                    background: transparent;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+/*=========================================================
+                Common Section 1 css end
+=========================================================*/

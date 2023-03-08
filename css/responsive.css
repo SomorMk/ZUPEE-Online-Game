@@ -1,0 +1,516 @@
+@media (min-width: 1400px) {
+    #banner .banner_right img {
+        max-width: 90%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #banner .banner_right img {
+        top: -100px;
+    }
+
+    #banner .banner_left .banner_tagline img {
+        max-width: 15px;
+    }
+
+    #banner .banner_left .banner_tagline {
+        font-size: 14px;
+    }
+
+    #common_section .member_row .item .item_img img {
+        max-width: 80%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .navbar .navbar-brand img {
+        max-width: 140px;
+    }
+
+    .navbar #navbarSupportedContent .navbar-nav {
+        background: #fff;
+        text-align: center;
+        border-radius: 20px;
+    }
+
+    .navbar #navbarSupportedContent .navbar-nav .nav-item ul {
+        display: none;
+    }
+
+    .navbar #navbarSupportedContent .navbar-nav .nav-item .nav-link {
+        font-size: 20px;
+        letter-spacing: 0px;
+        word-spacing: 0px;
+    }
+
+
+    #banner {
+        padding: 240px 0 70px;
+    }
+
+    #banner .banner_left {
+        margin-top: 180px;
+    }
+
+    #banner .banner_right img {
+        top: -175px;
+        max-width: 420px;
+    }
+
+    #banner .banner_left .banner_title {
+        text-align: center;
+    }
+
+    #banner .banner_left .banner_pera {
+        text-align: center;
+    }
+
+    #banner .banner_left .banner_btn {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 20px;
+        padding: 5px 0;
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #banner .banner_left .banner_tagline {
+        margin-left: 10%;
+        margin-right: 0;
+    }
+
+    #banner .banner_left .banner_tagline {
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+        display: block;
+    }
+
+    #common_section .service_row .service_item {
+        margin: 10px 0;
+    }
+
+    #common_section .review_container {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    #common_section .member_row .item .item_img img {
+        max-width: 80%;
+    }
+
+    #footer .footer_bottom p {
+        margin-bottom: 30px;
+    }
+
+    #footer .footer_top ul li img {
+        max-width: 50%;
+    }
+
+    #footer .footer_top ul {
+        padding-top: 10px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .navbar .navbar-brand img {
+        max-width: 140px;
+    }
+
+    .navbar #navbarSupportedContent .navbar-nav {
+        background: #fff;
+        text-align: center;
+        border-radius: 20px;
+    }
+
+    .navbar #navbarSupportedContent .navbar-nav .nav-item ul {
+        display: none;
+    }
+
+    .navbar #navbarSupportedContent .navbar-nav .nav-item .nav-link {
+        font-size: 20px;
+        letter-spacing: 0px;
+        word-spacing: 0px;
+    }
+
+
+    #banner {
+        padding: 240px 0 70px;
+    }
+
+    #banner .banner_left {
+        margin-top: 180px;
+    }
+
+    #banner .banner_right img {
+        top: -175px;
+        max-width: 420px;
+    }
+
+    #banner .banner_left .banner_title {
+        text-align: center;
+    }
+
+    #banner .banner_left .banner_pera {
+        text-align: center;
+    }
+
+    #banner .banner_left .banner_btn {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 20px;
+        padding: 5px 0;
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #banner .banner_left .banner_tagline {
+        margin-left: 10%;
+        margin-right: 0;
+    }
+
+
+    #common_section .com_sec_pera {
+        font-size: 15px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #common_section ul,
+    #common_section ol {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    #common_section ul li,
+    #common_section ol li {
+        margin: 20px 0;
+        font-size: 14px;
+    }
+
+    #common_section .item_row .item {
+        width: 100%;
+        text-align: center;
+    }
+
+    #common_section .item_row .item .item_img img {
+        max-width: 80%;
+    }
+
+    #common_section .item_row .item .item_title {
+        font-size: 15px;
+    }
+
+    #common_section .service_row .service_item h4 {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    #common_section .service_row .service_item {
+        margin: 10px 0;
+    }
+
+    #common_section .review_container {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    #common_section .review_container .review_left h5 {
+        margin-right: 20px;
+    }
+
+
+
+    #common_section .text_review .text_review_item .head,
+    #common_section .review_slider .text_review_item .head {
+        height: 80px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    #common_section .text_review .text_review_item .head img,
+    #common_section .review_slider .text_review_item .head img {
+        height: 60px;
+        width: 60px;
+        max-width: 60px;
+    }
+
+    #common_section .text_review .text_review_item .head .name,
+    #common_section .review_slider .text_review_item .head .name {
+        top: 55%;
+        left: 95px;
+        font-size: 16px;
+    }
+
+    #common_section .text_review .text_review_item p,
+    #common_section .review_slider .text_review_item p {
+        font-size: 12px;
+        padding: 15px 15px 15px;
+        height: 200px;
+        border-radius: 0 0 15px 15px;
+    }
+
+    #common_section .text_review .nxt_aro,
+    #common_section .review_slider .nxt_aro {
+        left: 52%;
+    }
+
+    #common_section .text_review .prev_aro,
+    #common_section .review_slider .prev_aro {
+        left: 46%;
+    }
+
+    #common_section .text_review .prev_aro,
+    #common_section .text_review .nxt_aro,
+    #common_section .review_slider .prev_aro,
+    #common_section .review_slider .nxt_aro {
+        bottom: -50px;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 15px;
+        color: #fff;
+    }
+
+
+    #footer .footer_top ul li a {
+        font-size: 15px;
+    }
+
+    #footer .footer_top ul li {
+        line-height: 28px;
+    }
+
+    #footer .footer_top ul {
+        padding-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    #footer .footer_top ul {
+        padding-top: 10px;
+    }
+
+    #footer .footer_bottom p {
+        font-size: 12px;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .navbar .navbar-brand img {
+        max-width: 110px;
+    }
+
+    .navbar #navbarSupportedContent .navbar-nav {
+        background: #fff;
+        text-align: center;
+        border-radius: 20px;
+    }
+
+    .navbar #navbarSupportedContent .navbar-nav .nav-item ul {
+        display: none;
+    }
+
+    .navbar #navbarSupportedContent .navbar-nav .nav-item .nav-link {
+        font-size: 20px;
+        letter-spacing: 0px;
+        word-spacing: 0px;
+    }
+
+
+
+    #banner {
+        padding: 240px 0 0px;
+    }
+
+    #banner .banner_left {
+        margin-top: 130px;
+    }
+
+    #banner .banner_left .banner_title {
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    #banner .banner_left .banner_pera {
+        font-size: 16px;
+        word-spacing: 0;
+        text-align: center;
+    }
+
+    #banner .banner_left .banner_btn {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 20px;
+        padding: 5px 0;
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #banner .banner_left .banner_tagline {
+        display: none;
+    }
+
+    #banner .banner_right img {
+        position: absolute;
+        top: -160px;
+        left: 50%;
+        max-width: 340px;
+    }
+
+
+
+    #common_section .com_head {
+        font-size: 25px;
+        margin-bottom: 0px;
+    }
+
+    #common_section .com_sec_pera {
+        font-size: 14px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #common_section ul,
+    #common_section ol {
+        padding-left: 30px;
+        padding-right: 15px;
+    }
+
+    #common_section ul li,
+    #common_section ol li {
+        margin: 10px 0;
+        font-size: 13px;
+    }
+
+
+    #common_section .item_row .item .item_title {
+        font-size: 13px;
+    }
+
+    #common_section .item_row .item {
+        width: 100%;
+    }
+
+    #common_section .item_row .item .item_img img {
+        max-width: 100%;
+    }
+
+
+    #common_section .service_row .service_item h4 {
+        font-size: 13px;
+        margin-top: 10px;
+    }
+
+    #common_section .service_row .service_item {
+        margin: 12px 0;
+    }
+
+    #common_section .review_container .review_left h5 {
+        font-size: 40px;
+        margin-right: 20px;
+    }
+
+
+    #common_section .text_review .text_review_item .head,
+    #common_section .review_slider .text_review_item .head {
+        height: 80px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    #common_section .text_review .text_review_item .head img,
+    #common_section .review_slider .text_review_item .head img {
+        height: 65px;
+        width: 65px;
+        max-width: 65px;
+    }
+
+    #common_section .text_review .text_review_item .head .name,
+    #common_section .review_slider .text_review_item .head .name {
+        top: 55%;
+        left: 95px;
+        font-size: 16px;
+    }
+
+    #common_section .text_review .text_review_item p,
+    #common_section .review_slider .text_review_item p {
+        font-size: 12px;
+        padding: 15px 15px 15px;
+        height: 200px;
+        border-radius: 0 0 15px 15px;
+    }
+
+    #common_section .text_review .nxt_aro,
+    #common_section .review_slider .nxt_aro {
+        left: 54%;
+    }
+
+    #common_section .text_review .prev_aro,
+    #common_section .review_slider .prev_aro {
+        left: 44%;
+    }
+
+    #common_section .text_review .prev_aro,
+    #common_section .text_review .nxt_aro,
+    #common_section .review_slider .prev_aro,
+    #common_section .review_slider .nxt_aro {
+        bottom: -50px;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 15px;
+        color: #fff;
+    }
+
+
+    #common_section .item_row .item .item_img img {
+        max-width: 75%;
+    }
+
+    #common_section .member_row {
+        margin-top: 30px;
+    }
+
+    #common_section ul,
+    #common_section ol {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #common_section .question_inner ul li p a {
+        font-size: 15px;
+        font-weight: 500;
+        text-align: left;
+    }
+
+
+    #footer .footer_top ul li a {
+        font-size: 12px;
+    }
+
+    #footer .footer_top ul li {
+        line-height: 24px;
+    }
+
+    #footer .footer_top ul {
+        padding-top: 5px;
+        margin-bottom: 20px;
+    }
+
+    #footer .footer_bottom p {
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,64 @@
+@import '../mixins/mixins';
+@import '../variables/variable';
+
+/*=========================================================
+                    Banner css Start
+=========================================================*/
+#banner{
+    padding: 240px 0 150px;
+    background: $c2;
+    position: relative;
+
+    .banner_left{
+        z-index: 1;
+        .banner_title{
+            @include fs($c1,40px,700,$f2);
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        .banner_pera{
+            @include fs(#000,22px,400,$f1);
+            letter-spacing: 1px;
+            word-spacing: 2px;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+        }
+        .banner_btn{
+            @include fs(#fff,25px,500,$f1);
+            text-align: center;
+            padding: 12px 0;
+            border-radius: 40px;
+            width: 100%;
+            background: $c1;
+            margin-bottom: 20px;
+            cursor: pointer;
+            z-index: 5;
+            img{
+                max-width: 20px;
+                margin-right: 10px;
+            }
+        }
+        .banner_tagline{
+            @include fs($c1,16px,600,$f2);
+            display: inline;
+            margin-right: 15px;
+            img{
+                max-width: 20px;
+                margin-right: 10px;
+            }
+        }
+    }
+    .banner_right{
+        position: relative;
+        img{
+            position: absolute;
+            top: -130px;
+            left: 50%;
+            transform: translateX(-50%);
+            max-width: 100%;
+        }
+    }
+}
+/*=========================================================
+                    Banner css end
+=========================================================*/

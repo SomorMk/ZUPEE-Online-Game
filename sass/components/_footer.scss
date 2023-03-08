@@ -1,0 +1,77 @@
+@import '../mixins/mixins';
+@import '../variables/variable';
+
+/*=========================================================
+                    Footer css Start
+=========================================================*/
+#footer{
+    padding: 45px 0;
+
+    .footer_top{
+        .footer_head{
+            @include fs(#fff,26px,400,$f1);
+        }
+        ul{
+            padding-top: 20px;
+            li{
+                line-height: 35px;
+                a{
+                    @include fs(rgba(255, 255, 255, 0.7),16px,400,$f3);
+                    text-transform: capitalize;
+                    transition: all linear .3s;
+                    &:hover{
+                        color: #fff;
+                    }
+                }
+                img{
+                    max-width: 60%;
+                    opacity: .7;
+                    margin: 10px 0;
+                    transition: all linear .3s;
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    .footer_bottom{
+        margin-top: 50px;
+        text-align: center;
+        a{
+            text-align: center;
+            img{
+                max-width: 170px;
+                text-align: center;
+            }
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 20px;
+            li{
+                margin: 0 5px;
+                a{
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                    border-radius: 50%;
+                    background: $c2;
+                    i{
+                        font-size: 15px;
+                        color: $c1;
+                    }
+                }
+            }
+        }
+        p{
+            @include fs(rgba(255, 255, 255, 0.7),15px,400,$f3);
+            margin-top: 20px;
+        }
+    }
+}
+/*=========================================================
+                    Footer css end
+=========================================================*/
