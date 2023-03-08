@@ -1,0 +1,590 @@
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: #FFFFFF;
+  z-index: 999;
+}
+.preloader .center {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/*=========================================================
+                    Common css end
+=========================================================*/
+/*=========================================================
+                    Menu css Start
+=========================================================*/
+.navbar {
+  padding: 15px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  transition: all linear 0.2s;
+}
+.navbar .navbar-brand img {
+  max-width: 160px;
+}
+.navbar .navbar-toggler {
+  box-shadow: none;
+}
+.navbar #navbarSupportedContent .navbar-nav .nav-item {
+  margin-left: 10px;
+  position: relative;
+}
+.navbar #navbarSupportedContent .navbar-nav .nav-item .nav-link {
+  color: #4611a7;
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Teko", sans-serif;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  text-transform: capitalize;
+  background: none;
+  border: none;
+}
+.navbar #navbarSupportedContent .navbar-nav .nav-item .nav-link i {
+  font-size: 12px;
+}
+.navbar #navbarSupportedContent .navbar-nav .nav-item ul {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 300%;
+  left: 0;
+  width: 200px;
+  padding: 20px 10px 10px 20px;
+  background: #ffe800;
+  box-shadow: 0 0 5px 5px rgba(241, 241, 241, 0.5);
+  transition: all linear 0.3s;
+}
+.navbar #navbarSupportedContent .navbar-nav .nav-item ul li {
+  line-height: 35px;
+}
+.navbar #navbarSupportedContent .navbar-nav .nav-item ul li a {
+  color: #4611a7;
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Teko", sans-serif;
+}
+.navbar #navbarSupportedContent .navbar-nav .nav-item:hover ul {
+  visibility: visible;
+  opacity: 1;
+  top: 100%;
+}
+
+.menu_fix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: #fff;
+  transition: all linear 0.2s;
+}
+
+#nav-icon1,
+#nav-icon2,
+#nav-icon3,
+#nav-icon4 {
+  width: 25px;
+  height: 40px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon1 span,
+#nav-icon3 span,
+#nav-icon4 span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #4611a7;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+#nav-icon1 span:nth-child(1) {
+  top: 10px;
+}
+#nav-icon1 span:nth-child(2) {
+  top: 18px;
+}
+#nav-icon1 span:nth-child(3) {
+  top: 26px;
+}
+
+#nav-icon1.open span:nth-child(1) {
+  top: 18px;
+  transform: rotate(135deg);
+}
+#nav-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+#nav-icon1.open span:nth-child(3) {
+  top: 18px;
+  transform: rotate(-135deg);
+}
+
+/*=========================================================
+                    Menu css end
+=========================================================*/
+/*=========================================================
+                    Banner css Start
+=========================================================*/
+#banner {
+  padding: 240px 0 150px;
+  background: #ffe800;
+  position: relative;
+}
+#banner .banner_left {
+  z-index: 1;
+}
+#banner .banner_left .banner_title {
+  color: #4611a7;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Expletus Sans", cursive;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+#banner .banner_left .banner_pera {
+  color: #000;
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Teko", sans-serif;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+#banner .banner_left .banner_btn {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: "Teko", sans-serif;
+  text-align: center;
+  padding: 12px 0;
+  border-radius: 40px;
+  width: 100%;
+  background: #4611a7;
+  margin-bottom: 20px;
+  cursor: pointer;
+  z-index: 5;
+}
+#banner .banner_left .banner_btn img {
+  max-width: 20px;
+  margin-right: 10px;
+}
+#banner .banner_left .banner_tagline {
+  color: #4611a7;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Expletus Sans", cursive;
+  display: inline;
+  margin-right: 15px;
+}
+#banner .banner_left .banner_tagline img {
+  max-width: 20px;
+  margin-right: 10px;
+}
+#banner .banner_right {
+  position: relative;
+}
+#banner .banner_right img {
+  position: absolute;
+  top: -130px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 100%;
+}
+
+/*=========================================================
+                    Banner css end
+=========================================================*/
+/*=========================================================
+                Common Section 1 css Start
+=========================================================*/
+#common_section {
+  padding: 40px 0;
+}
+#common_section .com_head {
+  color: #4611a7;
+  font-size: 35px;
+  font-weight: 800;
+  font-family: "Expletus Sans", cursive;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#common_section .com_sec_pera {
+  margin: 20px 0;
+  color: #000;
+  font-size: 17px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#common_section ul,
+#common_section ol {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+#common_section ul li,
+#common_section ol li {
+  list-style: square;
+  margin: 20px 0;
+  font-style: italic;
+  color: #000;
+  font-size: 17px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+#common_section ol li {
+  list-style: decimal;
+}
+#common_section .item_row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+#common_section .item_row .item {
+  margin-bottom: 24px;
+}
+#common_section .item_row .item .item_img {
+  text-align: center;
+  margin-bottom: 15px;
+}
+#common_section .item_row .item .item_img img {
+  width: 100%;
+  max-width: 120px;
+}
+#common_section .item_row .item .item_title {
+  color: "Teko", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  text-transform: capitalize;
+}
+#common_section .service_row {
+  padding-top: 40px;
+}
+#common_section .service_row .service_item {
+  text-align: center;
+}
+#common_section .service_row .service_item img {
+  max-width: 80px;
+  border-radius: 50%;
+}
+#common_section .service_row .service_item h4 {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+  margin-top: 15px;
+}
+#common_section .review_container {
+  background: #F0F3FC;
+  border-radius: 20px;
+  padding: 20px 50px;
+}
+#common_section .review_container .review_left {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+#common_section .review_container .review_left h5 {
+  color: #000;
+  font-size: 50px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+#common_section .review_container .review_left .stars i {
+  font-size: 15px;
+  color: #38AC60;
+}
+#common_section .review_container .review_right .review_scale {
+  width: 100%;
+  height: 10px;
+  background: #DEE4F2;
+  border-radius: 5px;
+  margin: 10px 0;
+  position: relative;
+  margin-left: 20px;
+}
+#common_section .review_container .review_right .review_scale span {
+  position: absolute;
+  top: 50%;
+  left: -15px;
+  transform: translateY(-50%);
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+#common_section .review_container .review_right .review_scale::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 10px;
+  background: #38AC60;
+  border-radius: 5px;
+}
+#common_section .review_container .review_right .review_scale.five::after {
+  width: 70%;
+}
+#common_section .review_container .review_right .review_scale.four::after {
+  width: 90%;
+}
+#common_section .review_container .review_right .review_scale.three::after {
+  width: 40%;
+}
+#common_section .review_container .review_right .review_scale.two::after {
+  width: 20%;
+}
+#common_section .review_container .review_right .review_scale.one::after {
+  width: 10%;
+}
+#common_section .text_review,
+#common_section .review_slider {
+  margin-top: 40px;
+  position: relative;
+}
+#common_section .text_review .prev_aro,
+#common_section .text_review .nxt_aro,
+#common_section .review_slider .prev_aro,
+#common_section .review_slider .nxt_aro {
+  position: absolute;
+  bottom: -50px;
+  width: 50px;
+  height: 50px;
+  background: #FFE800;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+#common_section .text_review .prev_aro,
+#common_section .review_slider .prev_aro {
+  left: 48%;
+  margin-right: 10px;
+}
+#common_section .text_review .nxt_aro,
+#common_section .review_slider .nxt_aro {
+  left: 52%;
+  margin-left: 10px;
+}
+#common_section .text_review .text_review_item,
+#common_section .review_slider .text_review_item {
+  margin: 12px;
+}
+#common_section .text_review .text_review_item .head,
+#common_section .review_slider .text_review_item .head {
+  height: 100px;
+  background: #ffe800;
+  border-radius: 20px 20px 0 0;
+  position: relative;
+}
+#common_section .text_review .text_review_item .head img,
+#common_section .review_slider .text_review_item .head img {
+  height: 80px;
+  width: 80px;
+  max-width: 80px;
+  border-radius: 50%;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#common_section .text_review .text_review_item .head .name,
+#common_section .review_slider .text_review_item .head .name {
+  position: absolute;
+  top: 50%;
+  left: 120px;
+  transform: translateY(-50%);
+  color: #4611a7;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Teko", sans-serif;
+}
+#common_section .text_review .text_review_item p,
+#common_section .review_slider .text_review_item p {
+  color: #000;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  line-height: 24px;
+  padding: 30px 20px 20px;
+  border: 8px solid #ffe800;
+  border-top: 0;
+  height: 300px;
+  border-radius: 0 0 20px 20px;
+}
+#common_section .member_row {
+  margin-top: 20px;
+  justify-content: space-evenly;
+}
+#common_section .member_row .item .item_img img {
+  max-width: 100%;
+}
+#common_section .question_inner ul li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  list-style: none;
+}
+#common_section .question_inner ul li p a {
+  background: transparent;
+  border: none;
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Expletus Sans", cursive;
+}
+#common_section .question_inner ul li .card {
+  background: transparent;
+  border: none;
+}
+
+/*=========================================================
+                Common Section 1 css end
+=========================================================*/
+/*=========================================================
+                    Footer css Start
+=========================================================*/
+#footer {
+  padding: 45px 0;
+}
+#footer .footer_top .footer_head {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 400;
+  font-family: "Teko", sans-serif;
+}
+#footer .footer_top ul {
+  padding-top: 20px;
+}
+#footer .footer_top ul li {
+  line-height: 35px;
+}
+#footer .footer_top ul li a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+  transition: all linear 0.3s;
+}
+#footer .footer_top ul li a:hover {
+  color: #fff;
+}
+#footer .footer_top ul li img {
+  max-width: 60%;
+  opacity: 0.7;
+  margin: 10px 0;
+  transition: all linear 0.3s;
+}
+#footer .footer_top ul li img:hover {
+  opacity: 1;
+}
+#footer .footer_bottom {
+  margin-top: 50px;
+  text-align: center;
+}
+#footer .footer_bottom a {
+  text-align: center;
+}
+#footer .footer_bottom a img {
+  max-width: 170px;
+  text-align: center;
+}
+#footer .footer_bottom ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+}
+#footer .footer_bottom ul li {
+  margin: 0 5px;
+}
+#footer .footer_bottom ul li a {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  background: #ffe800;
+}
+#footer .footer_bottom ul li a i {
+  font-size: 15px;
+  color: #4611a7;
+}
+#footer .footer_bottom p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 20px;
+}
+
+/*=========================================================
+                    Footer css end
+=========================================================*//*# sourceMappingURL=style.css.map */
